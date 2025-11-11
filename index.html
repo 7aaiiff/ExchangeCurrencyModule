@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convert</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <div class="container"> <!-- Main container for the currency converter -->
+        <h2>Currency Converter</h2> <!-- Title of the application -->
+        <form>
+            <div class="amount"> <!-- Section for amount input -->
+                <p>Enter Your Amount</p>
+                <input type="text" value="100"> <!-- Input field for the user to enter the amount to convert -->
+            </div>
+            <div class="dropdown"> <!-- Dropdown for selecting currencies -->
+                <div class="from"> <!-- Section for selecting the currency to convert from -->
+                    <p>From</p>
+                    <div class="selectContainer"> <!-- Container for the select dropdown -->
+                        <img src="https://flagsapi.com/US/flat/64.png"> <!-- Flag for the currency -->
+                        <select name="From"> <!-- Dropdown for selecting the 'from' currency -->
+                        </select>
+                    </div>
+                </div>
+                <div class="icon"> <!-- Icon to indicate conversion direction -->
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+                <div class="to"> <!-- Section for selecting the currency to convert to -->
+                    <div class="To">
+                        <p>To</p>
+                        <div class="selectContainer"> <!-- Container for the select dropdown -->
+                            <img src="https://flagsapi.com/PK/flat/64.png"> <!-- Flag for the currency -->
+                            <select name="To"> <!-- Dropdown for selecting the 'to' currency -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="Btn">Convert</button> <!-- Button to trigger the conversion -->
+            <div class="display">1 USD = 290 PKR</div> <!-- Display area for conversion rate -->
+        </form>
+    </div>
+    <script src="codes.js"></script> <!-- Additional JavaScript file -->
+    <script src="app.js"></script> <!-- Link to external JavaScript for functionality -->
+</body>
+</html>
